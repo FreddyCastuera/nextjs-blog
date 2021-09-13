@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+*:focus{
+    border-color: transparent;
+}

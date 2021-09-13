@@ -18,5 +18,11 @@ export default{
     async updatePost(key,updatedProperty){
         const init = {method:"PATCH",body:JSON.stringify(updatedProperty)}
         await fetch(`${BASE_URL}/${key}.json`,init)
+    },
+    async postData(data){
+        const config = {method:"POST",body:JSON.stringify(data)}
+        const post = await fetch('https://blog-7be92-default-rtdb.firebaseio.com/posts.json',config);
+        const key = await post.json()
+        return key;
     }
 }

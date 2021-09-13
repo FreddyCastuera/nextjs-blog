@@ -4,14 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { useState,useEffect } from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
-
-async function postData(data){
-    const config = {method:"POST",body:JSON.stringify(data)}
-    const post = await fetch('https://blog-7be92-default-rtdb.firebaseio.com/posts.json',config);
-    const key = await post.json()
-    console.log(key);
-    return key;
-}
+import api from '../api'
 
 export default function CreatePost() {
     const [data,setData]=useState({comments:[""],reactions:0,user:"jorge"})
@@ -21,7 +14,7 @@ export default function CreatePost() {
         setData({...data,[name]:value})
     }
     async function handleSubmit(){
-        const key  = await postData(data);
+        const key  = await api.postData(data);
         const id = key.name
         Router.push(`/posts/${id}`)
 
