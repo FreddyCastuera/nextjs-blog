@@ -34,7 +34,7 @@ function Card(props){
             className="text-4xl font-black py-2 text-purple-400"
         >{title}</h3>
         <p
-
+            className="text-gray-500"
         >{content}</p>
         <button
             onClick={addReaction}

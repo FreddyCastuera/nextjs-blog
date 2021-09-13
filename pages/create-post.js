@@ -7,6 +7,7 @@ import Router from 'next/router'
 import api from '../api'
 import Form from '../components/form'
 
+
 export default function CreatePost() {
     const [data,setData]=useState({comments:[""],reactions:0,user:"jorge"})
 
