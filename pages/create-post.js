@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 import api from '../api'
 
+
 export default function CreatePost() {
     const [data,setData]=useState({comments:[""],reactions:0,user:"jorge"})
 
@@ -22,11 +23,14 @@ export default function CreatePost() {
     }
 
     return (
-        <Layout home>
+        <Layout>
             <div className="flex flex-col">
-                <label htmlFor="title">title</label>
+                <label 
+                    htmlFor="title"
+                    className="text-purple-300"
+                    >title</label>
                 <input 
-                    className="border-2 border-black"
+                    className="w-full border-2 border-pink-200 rounded"
                     type="text"    
                     id="title" 
                     name="title" 
@@ -36,9 +40,12 @@ export default function CreatePost() {
             </div>    
             <br/>
             <div className="flex flex-col">
-                <label htmlFor="content">content</label>
+                <label 
+                    htmlFor="content"
+                    className="text-purple-300"
+                    >content</label>
                 <textarea 
-                    className="border-2 border-black"
+                    className="w-full border-2 border-pink-200 rounded"
                     name="content" 
                     value={data.content} 
                     id="" 
@@ -48,10 +55,13 @@ export default function CreatePost() {
                 ></textarea>
             </div>
             <br />
-            <div className="flex flex-col">
-                <label htmlFor="image">image</label>
+            <div className="flex flex-col mb-5">
+                <label
+                    htmlFor="image"
+                    className="text-purple-300"
+                    >image</label>
                 <input 
-                    className="border-2 border-black"
+                    className="w-full border-2 border-pink-200 rounded"
                     type="text"     
                     id="image" 
                     name="image" 
@@ -60,7 +70,7 @@ export default function CreatePost() {
                 />
             </div>
             <button
-                className="border-2 border-black w-60 mt-5"
+                className="rounded bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:from-blue-200 text-white font-bold mb-5 p-1 mt- md:mt-0 w-60"
                 onClick={handleSubmit}
             >enviar</button>
             

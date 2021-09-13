@@ -22,7 +22,7 @@ export default function Home() {
     <>
     <nav className="container min-w-full h-16 py-3 flex justify-end shadow-xl">
       <Link href="/create-post" >
-        <button className="bg-blue-600 px-5 mr-12 text-white rounded">create post</button>
+        <button className="rounded bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:from-blue-200 text-white font-bold p-1 mt-2 md:mt-0 px-3 mr-5">create post</button>
       </Link>
     </nav>
   

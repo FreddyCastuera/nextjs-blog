@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div >
           <Link href="/">
-            <a>← Back to home</a>
+            <a className="text-purple-400">← Back to home</a>
           </Link>
         </div>
       )}

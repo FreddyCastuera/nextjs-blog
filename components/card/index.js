@@ -18,13 +18,13 @@ export default function Card(props){
       <div className="flex flex-row justify-around">
         <Link href={`/posts/${key}`}>
           <a 
-          className="border-1 rounded bg-blue-700 w-2/6 text-center text-white py-2"
+          className="rounded bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:from-blue-200 text-white font-bold p-1 mt-2 md:mt-0 px-3"
           href="">ver</a>
         </Link>
         <button 
           data-key={key}  
           onClick={deletePost}
-          className="border-1 rounded bg-red-600 w-2/6 text-white py-2">borrar
+          className="rounded bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:from-blue-200 text-white font-bold p-1 mt-2 md:mt-0 px-3">borrar
         </button>
       </div>
     </div>
