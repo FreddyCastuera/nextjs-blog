@@ -31,7 +31,7 @@ function Card(props){
             alt="" 
         />
         <h3 
-            className="text-4xl py-2 text-purple-400"
+            className="text-4xl font-black py-2 text-purple-400"
         >{title}</h3>
         <p
 
