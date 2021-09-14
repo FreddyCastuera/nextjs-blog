@@ -44,7 +44,7 @@ export default function form(props) {
                 />
             </div>
             <button
-                className="rounded bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:from-blue-200 text-white font-bold px-4 py-1"
+                className="rounded bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 hover:from-blue-200 text-white font-bold px-4 py-1 mb-5"
                 onClick={handleSubmit}
             >enviar</button>
         </div>
