@@ -24,11 +24,13 @@ export default function PostDetail(props){
     
     return (
         <>
-        <img 
-            className="rounded" 
-            src={image} 
-            alt="" 
-        />
+        <div>
+            <img 
+                className="object-cover w-full" 
+                src={image} 
+                alt="" 
+            />
+        </div>
         <h3 
             className="text-4xl font-black py-2 text-purple-400"
         >{title}</h3>
