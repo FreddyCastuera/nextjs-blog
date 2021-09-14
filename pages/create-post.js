@@ -24,12 +24,13 @@ export default function CreatePost() {
     }
 
     return (
-        <Layout home>
+        <Layout >
             <Form
                 handleInput = { handleInput }
                 handleSubmit = { handleSubmit }
                 data = { data }
             />
+
         </Layout>
     )
 }

@@ -7,7 +7,7 @@ export default function form(props) {
             <div className="flex flex-col">
                 <label htmlFor="title">title</label>
                 <input 
-                    className="border-2 border-black"
+                    className="w-12/12 mr-1 border-2 border-pink-200 focus:border-purple-300"
                     type="text"    
                     id="title" 
                     name="title" 
@@ -19,7 +19,7 @@ export default function form(props) {
             <div className="flex flex-col">
                 <label htmlFor="content">content</label>
                 <textarea 
-                    className="border-2 border-black"
+                    className="w-12/12 mr-1 border-2 border-pink-200 focus:border-purple-300"
                     name="content" 
                     value={data.content} 
                     id="" 
@@ -32,7 +32,7 @@ export default function form(props) {
             <div className="flex flex-col">
                 <label htmlFor="image">image</label>
                 <input 
-                    className="border-2 border-black"
+                    className="w-12/12 mr-1 border-2 border-pink-200 focus:border-purple-300"
                     type="text"     
                     id="image" 
                     name="image" 
@@ -41,7 +41,7 @@ export default function form(props) {
                 />
             </div>
             <button
-                className="border-2 border-black w-60 mt-5"
+                className="border-2 border-pink-200 focus:border-purple-300 w-60 mt-5 mb-5"
                 onClick={handleSubmit}
             >enviar</button>
         </div>
