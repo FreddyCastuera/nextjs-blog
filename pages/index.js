@@ -26,10 +26,12 @@ export default function Home() {
       </Link>
     </nav>
   
-      <div className="flex flex-wrap flex-col md:flex-row ">
-        {
-          posts.map(post=><Card post={post} deletePost={deletePost} />)
-        }
+      <div className="container mx-auto">
+        <div className="flex flex-wrap flex-col md:flex-row ">
+          {
+            posts.map(post=><Card post={post} deletePost={deletePost} />)
+          }
+        </div>
       </div>
     </>
     )
