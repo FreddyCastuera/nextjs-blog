@@ -11,8 +11,11 @@ export default function Card(props){
         <div className="">
           <img className="max-h-72 w-full object-cover" src={image} alt=""/>
         </div>
-        <div className="flex justify-between items-center p-3">
+        <div className="flex justify-between items-center px-3 pt-3">
           <h1 className="font-bold text-xl">{title}</h1>
+        </div>
+        <div>
+          <p className="text-gray-300 font-semibold pl-3 mb-3" >{ user }</p>
         </div>
       </div>
       <div className="flex flex-row justify-around">

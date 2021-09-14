@@ -32,8 +32,11 @@ export default function PostDetail(props){
             />
         </div>
         <h3 
-            className="text-4xl font-black py-2 text-purple-400"
+            className="text-4xl font-black mt-2 text-purple-400"
         >{title}</h3>
+        <p className="text-gray-300 mb-2 font-extrabold" >
+            by { user }
+        </p>
         <p
             className="text-gray-500"
         >{content}</p>
