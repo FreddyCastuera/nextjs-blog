@@ -7,7 +7,7 @@ import PostDetail from '../../components/postdetail';
 export default function Post({ postData }) {
     return(
         <Layout>
-            < PostDetail post={postData} />
+            <PostDetail post={postData} />
         </Layout>
     );
 }
