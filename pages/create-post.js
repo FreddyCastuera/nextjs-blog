@@ -29,7 +29,6 @@ export default function CreatePost() {
                 handleSubmit = { handleSubmit }
                 data = { data }
             />
-
         </Layout>
     )
 }

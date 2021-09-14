@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function form(props) {
+export default function Form(props) {
     const { handleInput, handleSubmit, data} = props
     return (
         <div>
