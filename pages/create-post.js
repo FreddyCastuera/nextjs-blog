@@ -21,8 +21,7 @@ export default function CreatePost() {
         Router.push(`/posts/${id}`)
 
 
-    }
-
+    } 
     return (
         <Layout >
             <Form
